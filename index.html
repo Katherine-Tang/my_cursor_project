@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空闲时间统计</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>提交你的空闲时间</h1>
+        <div class="input-form">
+            <div class="date-input">
+                <label>开始日期：</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="date-input">
+                <label>结束日期：</label>
+                <input type="date" id="endDate">
+            </div>
+            <button onclick="submitTime()">提交时间</button>
+            <button onclick="showResults()">刷新结果</button>
+        </div>
+        
+        <div class="results">
+            <h2>最佳时间结果</h2>
+            <div id="topDates"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html> 
